@@ -1,0 +1,1041 @@
+/* BASIC SETTINGS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #111a2e;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+/* HEADING USED BY SECTIONS 2, 3 AND 4 */
+h1 {
+    margin: 18px 0 48px 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    color: #0f172a;
+}
+
+/* GREEN PILL LABEL USED BY SECTIONS 2, 3 AND 4 */
+.section-label {
+    display: inline-block;
+    margin: 0;
+    padding: 11px 20px;
+    background-color: #dcfbe8;
+    color: #087d3b;
+    border-radius: 30px;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* GREEN BUTTON USED IN SECTION 1 */
+.donate-button {
+    display: inline-block;
+    padding: 16px 26px;
+    background-color: #119447;
+    background-image: linear-gradient(90deg, #16a34a, #0f7a38);
+    color: white;
+    text-decoration: none;
+    border-radius: 32px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14.5px;
+    font-weight: 600;
+    box-shadow: 0 10px 20px rgba(17, 148, 71, 0.28);
+}
+
+.donate-button:hover {
+    background-image: none;
+    background-color: #087638;
+}
+
+
+/* ****************** 1 section (Navbar + Hero) ********************* */
+
+/* SOFT GREEN BACKGROUND BEHIND NAVBAR + HERO */
+.top-area {
+    padding-bottom: 100px;
+    background-color: #f1fbf5;
+    background-image: linear-gradient(135deg, #e9faf0 0%, #f6fcf8 55%, #fbfdfc 100%);
+}
+
+/* NAVBAR (3 boxes: logo / menu / button) */
+.header {
+    width: 70%;
+    margin: 0 auto;
+    padding: 16px 0;
+    font-size: 0;
+}
+
+.logo-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22%;                /* CHANGED (was 25%) */
+    font-size: 16px;
+    white-space: nowrap;       /* CHANGED (new line) */
+}
+
+.logo {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.logo-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 11px;
+    box-shadow: 0 5px 12px rgba(17, 148, 71, 0.25);
+}
+
+.logo-icon img {
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+}
+
+.green-word {
+    color: #119447;
+}
+
+.navigation {
+    display: inline-block;
+    vertical-align: middle;
+    width: 56%;                /* CHANGED (was 50%) */
+    text-align: center;
+    white-space: nowrap;       /* CHANGED (new line) */
+    font-size: 0;              /* CHANGED (was 16px) */
+}
+
+.navigation a {
+    display: inline-block;
+    margin: 0 11px;            /* CHANGED (was 0 16px) */
+    color: #111a2e;
+    text-decoration: none;
+    font-size: 15px;           /* CHANGED (was 15.5px) */
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    color: #119447;
+}
+
+.header-right {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22%;                /* CHANGED (was 25%) */
+    text-align: right;
+    white-space: nowrap;       /* CHANGED (new line) */
+    font-size: 16px;
+}
+
+/* HERO (2 boxes: text / photo) */
+.hero {
+    width: 70%;
+    margin: 86px auto 0 auto;
+    font-size: 0;
+}
+
+.hero-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 52%;
+    padding-right: 4%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.small-label {
+    display: inline-block;
+    margin: 0;
+    padding: 11px 18px;
+    background-color: #dcf7e6;
+    color: #087d3b;
+    border-radius: 32px;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    margin: 22px 0 0 0;
+    font-size: 58px;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+.highlight {
+    color: #15803d;
+    text-decoration: underline;
+    text-decoration-color: #f4a900;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+.description {
+    max-width: 500px;
+    margin: 30px 0 0 0;
+    color: #5f6f7e;
+    font-size: 17.5px;
+    line-height: 29.5px;
+}
+
+.hero-buttons {
+    margin-top: 28px;
+}
+
+.story-button {
+    display: inline-block;
+    margin-left: 16px;
+    padding: 15px 26px;
+    border: 1px solid #dce5ec;
+    border-radius: 32px;
+    background-color: white;
+    color: #111a2e;
+    text-decoration: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14.5px;
+    font-weight: 600;
+}
+
+.story-button:hover {
+    background-color: #e9f7ef;
+}
+
+/* DONOR INFORMATION */
+.donor-info {
+    margin-top: 56px;
+}
+
+.donor-info img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.donor-info img + img {
+    margin-left: -6px;
+}
+
+.donor-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 14px;
+}
+
+.donor-title {
+    margin: 0;
+    font-size: 14.5px;
+    font-weight: 800;
+    color: #111a2e;
+}
+
+.donor-sub {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    color: #78838d;
+}
+
+/* PHOTO + 2 FLOATING CARDS (cards overlap the photo with negative margins) */
+.photo-area {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    font-size: 0;
+}
+
+.float-wrap {
+    height: 72px;
+}
+
+.meals-wrap {
+    margin-left: -50px;
+}
+
+.secure-wrap {
+    margin-top: -128px;
+    margin-right: -62px;
+    text-align: right;
+}
+
+.float-card {
+    display: inline-block;
+    vertical-align: top;
+    height: 72px;
+    line-height: 72px;
+    padding: 0 22px 0 14px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(23, 43, 36, 0.14);
+    text-align: left;
+}
+
+.float-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    margin-right: 12px;
+    background-color: #119447;
+    background-image: linear-gradient(135deg, #16a34a, #0f7a38);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.orange-icon {
+    background-color: #f29a00;
+    background-image: linear-gradient(135deg, #fbb024, #ea8a00);
+}
+
+.float-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+.float-number {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #111a2e;
+}
+
+.float-label {
+    margin: 2px 0 0 0;
+    font-size: 12.5px;
+    color: #78838d;
+}
+
+.hero-photo {
+    display: block;
+    width: 100%;
+    height: 660px;
+    margin-top: -128px;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+
+/* *************************** 2 section (Why Hopewell) ******************* */
+
+.why-section {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #f9fafb;
+}
+
+.why-inner {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* CARDS AREA (3 cards in one row, then next row) */
+.why-cards {
+    width: 100%;
+    text-align: left;
+    font-size: 0;
+}
+
+.why-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    min-height: 222px;
+    margin-right: 2%;
+    margin-bottom: 24px;
+    padding: 32px 26px;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(20, 40, 55, 0.06);
+    font-size: 16px;
+}
+
+/* every 3rd card has no right margin, so 3 cards fit in one row */
+.why-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* GREEN ICON BOX */
+.why-icon {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    margin-bottom: 14px;
+    background-color: #119447;
+    background-image: linear-gradient(135deg, #16a34a, #0f7a38);
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(17, 148, 71, 0.2);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.why-card h3 {
+    margin: 0 0 8px 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.why-card p {
+    margin: 0;
+    color: #6e747b;
+    font-size: 15.5px;
+    line-height: 26px;
+}
+
+
+/* ****************** 3 section (Causes) ********************* */
+
+.causes-section {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    background-color: white;
+}
+
+.causes-inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.causes-head {
+    text-align: center;
+}
+
+.causes-sub {
+    max-width: 540px;
+    margin: -22px auto 48px auto;
+    color: #6e747b;
+    font-size: 16.5px;
+    line-height: 27px;
+}
+
+/* CARDS AREA */
+.cause-list {
+    width: 100%;
+    text-align: left;
+    font-size: 0;
+}
+
+.cause-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 24px;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(20, 40, 55, 0.08);
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.cause-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* IMAGE + CATEGORY PILL (pill sits on top of the photo using negative margin) */
+.image-box {
+    height: 286px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.category {
+    display: inline-block;
+    vertical-align: top;
+    height: 32px;
+    line-height: 32px;
+    margin: 14px 0 0 14px;
+    padding: 0 14px;
+    background-color: white;
+    color: #15803d;
+    border-radius: 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+.image-box img {
+    display: block;
+    width: 100%;
+    height: 286px;
+    margin-top: -46px;
+    object-fit: cover;
+}
+
+/* CARD TEXT */
+.cause-body {
+    padding: 24px;
+}
+
+.cause-body h3 {
+    margin: 0 0 8px 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.cause-body p {
+    margin: 0 0 18px 0;
+    font-size: 14.5px;
+    color: #6e747b;
+}
+
+/* PROGRESS BAR (orange to green) */
+.progress {
+    width: 100%;
+    height: 8px;
+    background-color: #edf1f4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 8px;
+    background-color: #119447;
+    background-image: linear-gradient(90deg, #f29a00, #119447);
+    border-radius: 20px;
+}
+
+/* RAISED + GOAL ON ONE LINE */
+.amount {
+    margin: 14px 0 22px 0;
+    font-size: 0;
+}
+
+.amount-raised,
+.amount-goal {
+    display: inline-block;
+    width: 50%;
+    font-size: 14.5px;
+}
+
+.amount-raised {
+    color: #119447;
+    font-weight: 800;
+}
+
+.amount-goal {
+    text-align: right;
+    color: #6e747b;
+}
+
+/* BUTTON */
+.cause-body a {
+    display: block;
+    padding: 13px;
+    border: 1px solid #119447;
+    border-radius: 30px;
+    color: #15803d;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cause-body a:hover {
+    background-color: #119447;
+    color: white;
+}
+
+
+
+/* ****************** 4 section ********************* */
+
+
+/* MAIN SECTION */
+.contact-section {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* TWO BOXES AREA (font-size 0 removes the gap between inline-blocks) */
+.contact-wrapper {
+    width: 100%;
+    text-align: left;
+    font-size: 0;
+}
+
+/* LEFT BOX */
+.contact-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 42%;
+    margin-right: 2%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(20, 40, 55, 0.06);
+    font-size: 16px;
+}
+
+/* RIGHT BOX */
+.contact-form {
+    display: inline-block;
+    vertical-align: top;
+    width: 56%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(20, 40, 55, 0.06);
+    font-size: 16px;
+}
+
+/* INFO ROWS (office, email, phone) */
+.info-row {
+    margin-bottom: 26px;
+}
+
+.info-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #dcfbe8;
+    color: #119447;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 16px;
+}
+
+.info-text h3 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111a2e;
+}
+
+.info-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #6e747b;
+}
+
+/* MAP PLACEHOLDER */
+.map-box {
+    height: 220px;
+    line-height: 220px;
+    background-color: #e4fbed;
+    color: #119447;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* FORM FIELDS */
+.field {
+    margin-bottom: 22px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #111a2e;
+}
+
+.field input,
+.field textarea {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #dce5ec;
+    border-radius: 12px;
+    background-color: white;
+    color: #111a2e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: #119447;
+}
+
+.field textarea {
+    height: 124px;
+    resize: vertical;
+}
+
+/* NAME + EMAIL SIDE BY SIDE */
+.field-half {
+    display: inline-block;
+    vertical-align: top;
+    width: 48.5%;
+    margin-right: 3%;
+}
+
+.field-last {
+    margin-right: 0;
+}
+
+/* SEND BUTTON */
+.send-button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 32px;
+    background-color: #119447;
+    background-image: linear-gradient(90deg, #16a34a, #0f7a38);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 15px #11944735;
+}
+
+.send-button:hover {
+    background-color: #087638;
+    background-image: none;
+}
+
+
+
+/* ****************** 5 section (Footer) ********************* */
+
+/* FULL WIDTH DARK AREA */
+.footer {
+    background-color: #0a1322;
+    color: #b4bfcc;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+/* CONTENT AREA */
+.footer-inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* 4 COLUMNS (font-size 0 removes the gap between inline-blocks) */
+.footer-top {
+    width: 100%;
+    font-size: 0;
+    padding-bottom: 50px;
+}
+
+.footer-col {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+/* ---------- COLUMN 1 : BRAND ---------- */
+.footer-brand {
+    width: 34%;
+    padding-right: 8%;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-logo-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.footer-logo-icon img {
+    display: block;
+    width: 38px;
+    height: 38px;
+}
+
+.footer-green {
+    color: #1fb55a;
+}
+
+.footer-about {
+    margin: 18px 0 20px 0;
+    font-size: 15px;
+    line-height: 26px;
+    color: #b4bfcc;
+}
+
+/* SOCIAL ICONS */
+.footer-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    margin-right: 12px;
+    border: 1px solid #1f2b3d;
+    border-radius: 10px;
+    background-color: #0f1a2b;
+    color: #c9d3df;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-social a:hover {
+    background-color: #119447;
+    color: white;
+}
+
+/* BADGES */
+.footer-badges {
+    margin-top: 28px;
+}
+
+.footer-badge {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 13px 16px;
+    border: 1px solid #1f2b3d;
+    border-radius: 30px;
+    background-color: #0f1a2b;
+    color: #e3e9f0;
+    font-size: 12.5px;
+}
+
+.badge-icon {
+    color: #f29a00;
+    margin-right: 4px;
+}
+
+/* ---------- COLUMNS 2 + 3 : LINKS ---------- */
+.footer-links {
+    width: 17%;
+}
+
+.footer-col h3 {
+    margin: 4px 0 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* SMALL GREEN + ORANGE LINE UNDER HEADINGS */
+.footer-line {
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #119447;
+    background-image: linear-gradient(90deg, #119447, #f4a900);
+}
+
+.footer-links ul {
+    margin: 22px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: inline-block;
+    padding-left: 20px;
+    color: #c9d3df;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-links a:hover {
+    color: #1fb55a;
+}
+
+/* ---------- COLUMN 4 : CONTACT + NEWSLETTER ---------- */
+.footer-contact {
+    width: 32%;
+}
+
+.footer-contact-row {
+    margin-top: 16px;
+}
+
+.footer-contact-row:first-of-type {
+    margin-top: 22px;
+}
+
+.footer-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 10px;
+    background-color: #0f2a1f;
+    color: #1fb55a;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-contact-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    font-size: 14.5px;
+    color: #d5dde8;
+}
+
+/* NEWSLETTER */
+.footer-col .newsletter-title {
+    margin-top: 34px;
+}
+
+.newsletter-box {
+    width: 100%;
+    margin-top: 22px;
+    padding: 6px;
+    border: 1px solid #1f2b3d;
+    border-radius: 30px;
+    background-color: #0f1a2b;
+    font-size: 0;
+}
+
+.newsletter-box input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 86%;
+    height: 38px;
+    padding: 0 14px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14.5px;
+}
+
+.newsletter-box input:focus {
+    outline: none;
+}
+
+.newsletter-box button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background-color: #16a34a;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-box button:hover {
+    background-color: #087638;
+}
+
+.newsletter-note {
+    margin: 12px 0 0 0;
+    font-size: 12px;
+    color: #7f8c9d;
+}
+
+/* ---------- BOTTOM BAR ---------- */
+.footer-bottom {
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px solid #1a2436;
+    font-size: 0;
+}
+
+.bottom-left {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 14px;
+    color: #8b97a8;
+}
+
+.bottom-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    text-align: right;
+    font-size: 14px;
+    color: #8b97a8;
+}
+
+.copyright {
+    margin: 0 0 14px 0;
+}
+
+.footer-white {
+    color: #e3e9f0;
+}
+
+.bottom-links a {
+    display: inline-block;
+    margin-right: 18px;
+    color: #c9d3df;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bottom-links a:hover {
+    color: #1fb55a;
+}
+
+/* PAYMENT CHIPS */
+.payments {
+    margin-bottom: 14px;
+}
+
+.payments span {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 5px 10px;
+    border: 1px solid #1f2b3d;
+    border-radius: 6px;
+    color: #8b97a8;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.made-with {
+    margin: 0;
+}
